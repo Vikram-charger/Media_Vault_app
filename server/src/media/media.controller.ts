@@ -29,7 +29,13 @@ export class MediaController {
 
   @Get()
   list() {
-    return this.drive.list();
+    console.log('GET /api/media reached');
+    try{
+      return this.drive.list();
+    }catch(error){
+      console.error('Media error:', error);
+      throw error;
+    }
   }
 
   @Post('upload')
