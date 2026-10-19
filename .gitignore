@@ -2,7 +2,6 @@ node_modules/
 dist/
 build/
 # Google OAuth credentials and tokens
-server/data/drive-token.json
 .env
 .env.*
 !.env.example
